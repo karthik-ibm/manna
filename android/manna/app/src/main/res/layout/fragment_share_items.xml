@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentBlue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/shareitemToolbar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shares"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/lato"
+                        android:textSize="25dp"
+                        android:id="@+id/share_cat_item"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="30dp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBlack"
+                        android:layout_below="@+id/share_cat_item"
+                        android:layout_marginRight="150dp"
+                        android:layout_marginLeft="150dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select the category of items you want to share"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/lato"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/share_cat_item"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cart"
+                        android:id="@+id/shareitem_cart"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/share_quantity"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="35dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/captionShareQuantity"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lato"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:iconifiedByDefault="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_corner_search_view_shape"
+                        android:queryHint="Search Here" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@color/transparentWhite"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:id="@+id/catalog_image_share"/>
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/catalog_descr_share"
+                        android:text="@string/need"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/transparentBlack"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@color/transparentWhite"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/share_subcategory_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/semicircle_shape"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/taptoshare"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:backgroundTint="@color/buttonBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/tapshareButton"/>
+    </RelativeLayout>
+
+</RelativeLayout>

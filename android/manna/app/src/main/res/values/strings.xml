@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Manna</string>
+    <string name="share">~ SHARE ~</string>
+    <string name="care">~ CARE ~</string>
+
+    <string name="signin">Sign in</string>
+    <string name="phone">Phone Number</string>
+    <string name="otp">OTP</string>
+    <string name="getotp">Get OTP</string>
+    <string name="poweredby">Powered by</string>
+    <string name="sharencare">~ SHARE N ~ CARE</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="caption">Sharing is Caring</string>
+    <string name="needs">Need</string>
+    <string name="need">Request</string>
+    <string name="shares">Share</string>
+    <string name="seeothers">See What Others Are Sharing</string>
+    <string name="seeneeds">See the Need</string>
+    <string name="seewhatneeds">See What is in Need!</string>
+
+    <string name="caption1">Select the Category of Items</string>
+    <string name="captionShareQuantity">Tap on the Quantity you want to Share</string>
+    <string name="captionNeedQuantity">Tap on the Quantity you Need!</string>
+    <string name="taptorequest">Tap to Request</string>
+    <string name="taptoshare">Tap to start Sharing!</string>
+
+    <string name="sharecartcaption">Your Share Cart is Ready!</string>
+    <string name="needcartcaption">Your Need Cart is Ready!</string>
+    <string name="selectshareaddress">Select Share Address</string>
+    <string name="addresscaption">Address that you are comfortable, safe to reach out and share. It can be a common, public place</string>
+    <string name="marklocationonmap">Mark Location on Map</string>
+    <string name="selecttime">Select Available Time</string>
+
+    <string name="need_sub_title">Yay!! Your Request is Logged</string>
+    <string name="share_sub_title">Yay!! Thank you for Sharing!</string>
+    <string name="need_sub_msg">You will be notified as soon as anything that you have requested is available.</string>
+    <string name="share_sub_msg">Your sharing helps in realizing the vision of not letting anyone sleep hungry!!</string>
+    <string name="sub_caption">Every drop of sharing makes difference!</string>
+
+    <string name="API_key">AIzaSyDon-BFN9573BIhZAKqWHFISF7LQ8an4ws</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:id="@+id/cardItemImage"/>
+
+    <TextView
+        android:id="@+id/cardItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentBlack"
+        android:text="ABCD"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/lato"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentWhite"
+        android:text="in kg"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/lato"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+ <!--   <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">-->
+        <Button
+            android:id="@+id/qnt_add"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorBlack"
+            style="?attr/materialButtonOutlinedStyle"
+            />
+        <Button
+            android:id="@+id/qnt_sub"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorBlack"
+            style="?attr/materialButtonOutlinedStyle"
+            />
+
+   <!-- </com.google.android.material.button.MaterialButtonToggleGroup>-->
+
+    <TextView
+        android:id="@+id/card_qnty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentWhite"
+        android:text="10.0"
+        android:layout_gravity="bottom|right"
+        android:fontFamily="@font/lato"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold" />
+</androidx.cardview.widget.CardView>

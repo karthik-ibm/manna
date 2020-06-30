@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="buttonGreen">#77D353</color>
+    <color name="buttonBlue">#00A6FF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="loginButton">#C59F60</color>
+    <color name="colorRwjbhBlue">#0b4e87</color>
+    <color name="colorRwjbhred">#bd323a</color>
+    <color name="primaryGray">#e2e2e2</color>
+
+    <color name="transparentWhite">#7FFFFFFF</color>
+    <color name="opaqueWhite">#00FFFFFF</color>
+    <color name="transparentBlack">#9A000000</color>
+    <color name="transparentBlacksearch">#1A000000</color>
+    <color name="traBlacksearch">#00000000</color>
+    <color name="transparentGreen">#4A77D353</color>
+    <color name="transparentBlue">#1A00A6FF</color>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_size">300dp</dimen>
+    <dimen name="list_peek">40dp</dimen>
+    <dimen name="list_radius">220dp</dimen>
+</resources>

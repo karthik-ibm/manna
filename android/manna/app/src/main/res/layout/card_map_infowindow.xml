@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infowindow_line1"
+        android:layout_gravity="center"
+        android:text="test"
+        android:textSize="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:fontFamily="@font/lato"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infowindow_line2"
+        android:layout_gravity="center"
+        android:text="test"
+        android:textSize="16dp"
+        android:fontFamily="@font/lato"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infobutton"
+        android:layout_gravity="center"
+        style="@style/shareButtonStyle"/>
+
+</LinearLayout>

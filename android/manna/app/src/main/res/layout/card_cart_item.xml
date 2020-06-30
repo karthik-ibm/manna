@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentBlack"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+
+                android:background="@drawable/round_corner_white_shape"
+                android:id="@+id/cart_item_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_title"
+                android:text="text"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:fontFamily="@font/lato"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cart_qnt_add"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/colorBlack"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="@color/colorWhite"
+                />
+            <Button
+                android:id="@+id/cart_qnt_sub"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/colorBlack"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="@color/colorWhite"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_qnt"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/lato"
+                android:text="11"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="1dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rice"
+        android:id="@+id/map_card_img"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="line"
+        android:id="@+id/card_text"
+        android:background="@color/buttonBlue"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="14dp"
+        />
+</RelativeLayout>

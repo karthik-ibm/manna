@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentBlue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sharemapToolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seewhatneeds"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/lato"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/title"
+                    android:layout_marginTop="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorBlack"
+                    android:layout_marginRight="120dp"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".90"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="30dp"
+                android:src="@drawable/refresh"
+                android:id="@+id/share_fab_refresh"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/transparentGreen"/>
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corner_white_shape"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/recycler_maps_share"
+                android:background="@drawable/top_round_corner_black_shape"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_image_share_text"
+                android:textSize="19dp"
+                android:fontFamily="@font/lato"
+                android:text="testing"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="80dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shares"
+                android:textAllCaps="false"
+                android:fontFamily="@font/lato"
+                style="@style/shareButtonStyle"
+                android:id="@+id/map_share_button"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
